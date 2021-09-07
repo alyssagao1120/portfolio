@@ -11,7 +11,7 @@
         "jobTitle": "Data Engineer @ Ritual 🍔",
         "description": [
             "Implemented scheduled jobs to clean, filter, dedupe, match and load over 2 million resturants’ data into Salesforce",
-            "Constructed a pipeline to pipe 50k+ daily marketing events into Amplitude for marketing/growth team to use for further analysis"
+            "Constructed a dataflow  pipeline to pipe 50k+ daily marketing events into Amplitude for marketing/growth team to use for further analysis"
         ],
         "technologies": "Python, Java, BigQuery, Apache Beam/Airflow, Kubernetes, DBT, GCP",
         "date": "Winter 2021",
