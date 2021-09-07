@@ -1,6 +1,7 @@
 [
     {
-        "jobTitle": "Software Developer @ RBC 🏦",
+        "jobTitle": "Software Developer",
+        "company": "RBC 🏦",
         "description": ["Wealth Management Digital Client Experience (myGPS)"],
         "technologies": "Angular, JavaScript, Java, Spring Framework",
         "date": "Fall 2021",
@@ -8,7 +9,8 @@
         "url": "https://ca.rbcwealthmanagement.com/"
     },
     {
-        "jobTitle": "Data Engineer @ Ritual 🍔",
+        "jobTitle": "Data Engineer",
+        "company": "Ritual 🍔",
         "description": [
             "Implemented scheduled jobs to clean, filter, dedupe, match and load over 2 million resturants’ data into Salesforce",
             "Constructed a dataflow  pipeline to pipe 50k+ daily marketing events into Amplitude for marketing/growth team to use for further analysis"
@@ -19,7 +21,8 @@
         "url": "https://ritual.co/"
     },
     {
-        "jobTitle": "Finance Director @ L.I.G.H.T. 💡",
+        "jobTitle": "Finance Director",
+        "company": "L.I.G.H.T. 💡",
         "description": [
             "Oversaw all finances including budgets, reimbursements and grants",
             "Outreached to foundations including the Ontario Trillium Foundation (OTF) to negotiate funding"
