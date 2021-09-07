@@ -1,0 +1,30 @@
+.app {
+    padding: 2rem 15vw;
+}
+
+.nav-link {
+    padding: 0 1rem
+}
+
+.nav-link:hover {
+    background-color: #C8ABC9;
+    transition: 0.5s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container{
+    align-items: center;
+}

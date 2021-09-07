@@ -1,0 +1,9 @@
+<div class='home-container'>
+    <h1>{{greeting}}, I‘m Alyssa.</h1>
+    <h2 class="home-subheading">I'm <span class="tw" #tw></span></h2>
+    <img class="lofi-girl" src="assets/no_lights.png">
+    <div *ngIf='nowPlaying'>
+        Now Playing: {{ nowPlaying.name }}
+    </div>
+</div>
+

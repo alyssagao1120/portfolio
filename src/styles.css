@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #F2F2F2;
+    font-family: 'Segoe UI';
+}
+
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  h1 {
+      font-size: 80px;
+      font-weight: 700;
+      color: #221E41;
+      line-height: 106px;
+  }
+
+  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #221E41;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #635BA0;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #757384;
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+  }
