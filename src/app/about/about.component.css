@@ -1,0 +1,27 @@
+.about-header {
+    display: flex;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    flex-direction: space-between;
+}
+
+.about-bio {
+    padding-right:5rem;
+}
+
+a{
+    text-decoration: none;
+    font-weight:700;
+}
+
+/* a .ritual{
+    color:#18B3E9;
+} */
+div:hover span{
+    /* color: linear-gradient(180deg, #18B3E9 56.25%, #050106 72.4%); */
+    color: black;
+}

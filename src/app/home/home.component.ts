@@ -40,7 +40,6 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     .strings(
       1500,
       "a programmer.", 
-      "a student.", 
       "an avid movie binge-watcher.", 
       "a mediocre valorant gamer.", 
       "a foodie at heart.", 
