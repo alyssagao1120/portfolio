@@ -3,24 +3,30 @@
         "name": "Chess 🎮",
         "description": "Inspired by Chess Tempo, an interactive database of chess games that lets user enter any sequence of valid chess moves and view statistics about chess games that have been previously played starting from the same opening sequence of moves that the user has entered",
         "technologies": "Java, Python, React, Spring Boot, MySQL, Shell, Maven, HTML/CSS",
-        "award": "CS 348 - Top 4 Excellent Project Award"
+        "award": "CS 348 - Top 4 Excellent Project Award",
+        "github": "https://github.com/alyssagao1120/chess"
     },
     {
         "name": "SustainShip 🌱",
         "description": "Web interface promoting an eco-friendly delivery option which groups packages together on common user-preferred delivery dates to combat the effects of fast shipping and reduce carbon emissions",
         "technologies": "Node.js, React, Express.js, Passport.js, MongoDB, Google Map API, Material-UI, HTML/CSS",
-        "award": "TOHacks 2021 - Best Project that Addresses Climate Change"
+        "award": "TOHacks 2021 - Best Project that Addresses Climate Change",
+        "github": "https://github.com/alyssagao1120/sustainship",
+        "awardUrl": "https://devpost.com/software/sustainship"
     },
     {
         "name": "Recipe Hunt 🍰",
         "description": "Web application designed for people to discover new recipes based on already owned ingredients",
         "technologies": "Java, Spring MVC, REST API, MySQL, Angular, Typescript, HTML/CSS, Maven, Tomcat",
-        "award": null
+        "award": null,
+        "github": "https://github.com/alyssagao1120/recipe-hunt"
     },
     {
         "name": "SafeLane 🚘",
         "description": "Web interface intended to map out the safest and most efficient routes for beginner drivers or drivers with children in the car using an algorithm that avoids routes with high collision frequency intersections and streets",
         "technologies": "Java,  JavaScript, MySQL, HTML/CSS, Google Map API, Google Cloud",
-        "award": "Hack The Valley 4 - Best Mapping and Travel Hack"
+        "award": "Hack The Valley 4 - Best Mapping and Travel Hack",
+        "github": "https://github.com/alyssagao1120/safe-lane",
+        "awardUrl": "https://devpost.com/software/safelane"
     }
 ]

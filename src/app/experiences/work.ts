@@ -4,4 +4,5 @@ export interface IWork {
     technologies: string;
     date: string;
     location: string;
+    url: string;
 }

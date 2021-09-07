@@ -4,7 +4,8 @@
         "description": ["Wealth Management Digital Client Experience (myGPS)"],
         "technologies": "Angular, JavaScript, Java, Spring Framework",
         "date": "Fall 2021",
-        "location": "Toronto, Ontario"
+        "location": "Toronto, Ontario",
+        "url": "https://ca.rbcwealthmanagement.com/"
     },
     {
         "jobTitle": "Data Engineer @ Ritual 🍔",
@@ -14,17 +15,19 @@
         ],
         "technologies": "Python, Java, BigQuery, Apache Beam/Airflow, Kubernetes, DBT, GCP",
         "date": "Winter 2021",
-        "location": "Toronto, Ontario"
+        "location": "Toronto, Ontario",
+        "url": "https://ritual.co/"
     },
     {
-        "jobTitle": "Financial Director @ L.I.G.H.T. 💡",
+        "jobTitle": "Finance Director @ L.I.G.H.T. 💡",
         "description": [
             "Oversaw all finances including budgets, reimbursements and grants",
             "Outreached to foundations including the Ontario Trillium Foundation (OTF) to negotiate funding"
         ],
         "technologies": null,
         "date": "2018/2019",
-        "location": "Richmond Hill, Ontario"
+        "location": "Richmond Hill, Ontario",
+        "url": "https://www.lightcommunity.org/"
     }
 
 ]

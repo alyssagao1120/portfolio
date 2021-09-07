@@ -1,22 +1,42 @@
-<div class='experiences-header'>
-    <h2>cool stuff I’ve done</h2>
-    <img src='assets/cat_paw_flower.gif' width="100">
-
-</div>
-<div class='work'>
-    <h3>WORK</h3>
-    <div *ngFor="let workexp of work">
-        <h4>{{workexp.jobTitle}}</h4>
-        <ul>
-            <li *ngFor="let descrip of workexp.description">
-                <p>{{descrip}}</p>
-            </li>
-        </ul>
-        <p>
-            <span *ngIf='workexp.technologies'>
-                <p><span style='font-weight:700'>Technologies</span>: {{workexp.technologies}}</p>
-            </span>
-            {{workexp.date}} - {{workexp.location}}
-        </p>
+<div class='experiences-container'>
+    <div class='experiences-header'>
+        <h2>cool stuff I’ve done</h2>
+        <img src='assets/cat_paw_flower.gif' width="100">
+    
+    </div>
+    <div class='work'>
+        <h3>WORK</h3>
+        <div *ngFor="let workexp of work">
+            <a href={{workexp.url}}><h4>{{workexp.jobTitle}}</h4></a>
+            <ul>
+                <li *ngFor="let descrip of workexp.description">
+                    <p>{{descrip}}</p>
+                </li>
+            </ul>
+            <p>
+                <span *ngIf='workexp.technologies'>
+                    <p><span style='font-weight:700'>Technologies</span>: {{workexp.technologies}}</p>
+                </span>
+                {{workexp.date}} - {{workexp.location}}
+            </p>
+        </div>
+    </div>
+    <div class='side-projects'>
+        <h3>SIDE PROJECTS</h3>
+        <div *ngFor="let project of projects">
+            <a href={{project.github}}><h4>{{project.name}}</h4></a>
+            <p class='project-description'>{{project.description}}</p>
+            <p><span style='font-weight:700'>Technologies</span>: {{project.technologies}}</p>
+            <p>
+                <span *ngIf='project.award && project.awardUrl'>
+                    <a href={{project.awardUrl}}>{{project.award}}</a>
+                </span>
+            </p>
+            <p>
+                <span *ngIf='project.award && !project.awardUrl'>
+                    {{project.award}}
+                </span>
+            </p>
+        </div>
     </div>
 </div>

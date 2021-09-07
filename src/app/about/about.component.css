@@ -1,6 +1,7 @@
 .about-header {
     display: flex;
     align-items: center;
+    margin-top:2rem;
 }
 
 .about-container {
@@ -24,4 +25,8 @@ a{
 div:hover span{
     /* color: linear-gradient(180deg, #18B3E9 56.25%, #050106 72.4%); */
     color: black;
+}
+
+img .profile {
+    width: 45vw;
 }

@@ -3,4 +3,6 @@ export interface IProject {
     description: string;
     technologies: string;
     award: string;
+    github: string;
+    awardUrl: string;
 }

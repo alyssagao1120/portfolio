@@ -10,32 +10,32 @@ html, body {
   }
 
   h1 {
-      font-size: 80px;
+      font-size: 60px;
       font-weight: 700;
       color: #221E41;
       line-height: 106px;
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     color: #221E41;
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     color: #635BA0;
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: black;
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     color: #757384;
   }

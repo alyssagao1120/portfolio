@@ -11,7 +11,7 @@
         
                 <br>I'm a Computer Science student specializing in Business who is currently in their junior year at the University of Waterloo. 
                 I have experience working in both frontend/backend development and data engineering. Some of the areas I would love the chance to dive deeper 
-                in include Data, Software, Fintech, Macxhine Learning, Artificial Intelligence, UX/UI and Cybersecurity.<br>
+                in include Data, Software, Fintech, Machine Learning, Artificial Intelligence, UX/UI and Cybersecurity.<br>
         
                 <br>I love learning new languages and applying them in my own side projects to fully master them. Outside of school, 
                 I have gained work experience through internships and extracurriculars. I’m currently interning at <a class='rbc' href='https://www.rbcwealthmanagement.com/'><span style="color: #0050A5; font-weight:700;">RBC</span></a> 
@@ -27,5 +27,7 @@
             </p>
         </div>
     </div>
-    <img src='assets/about_me.png'>
+    <img class="profile" [src]="imgSrc" title="Nice to meet you!"
+           (mouseover)="imgSrc = 'assets/about_me_closed.png'"
+           (mouseout)="imgSrc = 'assets/about_me_opened.png'">
 </div>

@@ -1,19 +1,31 @@
 .app {
-    padding: 2rem 15vw;
+    padding: 2rem 20vw;
 }
 
-.nav-link {
+li {
     padding: 0 1rem
 }
 
-.nav-link:hover {
-    background-color: #C8ABC9;
-    transition: 0.5s;
+.navbar-logo a::after{
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.navbar-logo img:hover{
+    /* margin: 30px; */
+    border-radius: 50%;
+    box-shadow:  0 0 5px #ff02c0;
+    animation: glow 2s linear infinite alternate;
+  }
+  
+@keyframes glow{
+to {
+    box-shadow: 0px 0px 10px 10px #5adddd;
+}
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -30,8 +42,29 @@ ul {
 }
 
 a {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
     color: black;
     text-decoration: none;
+
+    display: block;
+	position: relative;
   }
+
+a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.2em;
+	background-color: #635BA0;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0.5em, 0);
+}

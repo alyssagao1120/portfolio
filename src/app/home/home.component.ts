@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
       typeColor: 'black',
       cursorColor: '#C8ABC9',
       deleteSpeed: 20,
-      typeSpeed: 100,
+      typeSpeed: 125,
       blinkSpeed: 200,
       animateCursor: true,
     })
@@ -47,13 +47,15 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     writer
     .strings(
       1500,
-      "a programmer.", 
-      "an avid movie binge-watcher.", 
-      "a mediocre valorant gamer.", 
-      "a foodie at heart.", 
-      "a heavy-emoji user. 🙈🌱✨", 
-      "a night owl.", 
-      "a Disney fanatic."
+      "a programmer. 👩🏻‍💻", 
+      "a foodie at heart. 🍜", 
+      "a heavy emoji user. 🙈🌱✨",
+      "an Angular over React user (controversial, I'm sorry 😖)", 
+      "a pineapple on pizza advocate 🍍",
+      "an avid movie binge-watcher. 🎬🍿",
+      "a mediocre valorant gamer. 🎮", 
+      "a night owl. 🌙", 
+      "a Disney fanatic. 🏰"
     )
     .start()
   }
