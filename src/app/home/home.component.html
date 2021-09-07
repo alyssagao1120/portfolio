@@ -1,7 +1,14 @@
 <div class='home-container'>
     <h1>{{greeting}}, I‘m Alyssa.</h1>
     <h2 class="home-subheading">I'm <span class="tw" #tw></span></h2>
-    <img class="lofi-girl" src="assets/no_lights.png">
+    <!-- <a id="home">
+        <img class="image_on" src="assets/no_lights.png">
+        <img class="image_off" src="assets/fairy_lights.png" alt="Inspired by Lofi Girl" />
+    </a> -->
+    <img [src]="imgSrc" title="Inspired by Lofi Girl"
+           (mouseover)="imgSrc = 'assets/fairy_lights.png'"
+           (mouseout)="imgSrc = 'assets/no_lights.png'">
+
     <div *ngIf='nowPlaying'>
         Now Playing: {{ nowPlaying.name }}
     </div>

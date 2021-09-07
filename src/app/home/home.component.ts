@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild  } from '@angular/core';
 import Typewriter from 't-writer.js';
-import SpotifyWebApi from 'spotify-web-api-js';
+// import SpotifyWebApi from 'spotify-web-api-js';
 
 @Component({
   selector: 'app-home',
@@ -13,12 +13,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   greetings: string[] = ['Hello', 'Hey', '你好', 'Hi', 'Bonjour', 'Howdy']
   greeting:string = '';
   nowPlaying = undefined;
-
-  // spotify
-  client_id = '5a15fd1fcac24acbb9ab97e2a380a20b'; // Your client id
-  client_secret = 'edcbf3480efd4464ae8770f1e5765a20'; // Your secret
-  redirect_uri = 'https://www.google.ca/'; // Your redirect uri
-  spotifyApi = new SpotifyWebApi();
+  imgSrc = 'assets/fairy_lights.png'
   
 
   constructor() { }
@@ -57,12 +52,12 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   }
 
   getNowPlaying(){
-    this.spotifyApi.getMyCurrentPlaybackState()
-      .then((response) => {
-        this.nowPlaying = { 
-          name: response.item.name, 
-          albumArt: response.item.album.images[0].url
-        }
-    });
+    // this.spotifyApi.getMyCurrentPlaybackState()
+    //   .then((response) => {
+    //     this.nowPlaying = { 
+    //       name: response.item.name, 
+    //       albumArt: response.item.album.images[0].url
+    //     }
+    // });
   }
 }
