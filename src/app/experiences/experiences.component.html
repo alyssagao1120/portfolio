@@ -1,4 +1,22 @@
 <div class='experiences-header'>
     <h2>cool stuff I’ve done</h2>
     <img src='assets/cat_paw_flower.gif' width="100">
+
+</div>
+<div class='work'>
+    <h3>WORK</h3>
+    <div *ngFor="let workexp of work">
+        <h4>{{workexp.jobTitle}}</h4>
+        <ul>
+            <li *ngFor="let descrip of workexp.description">
+                <p>{{descrip}}</p>
+            </li>
+        </ul>
+        <p>
+            <span *ngIf='workexp.technologies'>
+                <p><span style='font-weight:700'>Technologies</span>: {{workexp.technologies}}</p>
+            </span>
+            {{workexp.date}} - {{workexp.location}}
+        </p>
+    </div>
 </div>

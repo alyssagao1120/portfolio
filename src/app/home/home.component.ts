@@ -24,7 +24,6 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
     var d = new Date();
     this.currMonth = d.getMonth() + 1;
-    console.log(this.currMonth);
     if (this.currMonth === 12){
       this.lightsURL = 'assets/christmas_lights.png'
     }
