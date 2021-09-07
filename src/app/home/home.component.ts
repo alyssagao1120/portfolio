@@ -11,15 +11,24 @@ export class HomeComponent implements OnInit, AfterViewInit  {
 
   @ViewChild('tw') typewriterElement;
   greetings: string[] = ['Hello', 'Hey', '你好', 'Hi', 'Bonjour', 'Howdy']
+  currMonth: Number = -1;
+  lightsURL:string = 'assets/fairy_lights.png';
   greeting:string = '';
   nowPlaying = undefined;
-  imgSrc = 'assets/fairy_lights.png'
+  imgSrc = 'assets/no_lights.png'
   
 
   constructor() { }
 
   ngOnInit(): void {
     this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
+    var d = new Date();
+    this.currMonth = d.getMonth() + 1;
+    console.log(this.currMonth);
+    if (this.currMonth === 12){
+      this.lightsURL = 'assets/christmas_lights.png'
+    }
+
     this.getNowPlaying();
   }
 

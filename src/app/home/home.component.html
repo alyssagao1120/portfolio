@@ -6,7 +6,7 @@
         <img class="image_off" src="assets/fairy_lights.png" alt="Inspired by Lofi Girl" />
     </a> -->
     <img [src]="imgSrc" title="Inspired by Lofi Girl"
-           (mouseover)="imgSrc = 'assets/fairy_lights.png'"
+           (mouseover)="imgSrc = lightsURL"
            (mouseout)="imgSrc = 'assets/no_lights.png'">
 
     <div *ngIf='nowPlaying'>
