@@ -1,42 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-    background-color: #F2F2F2;
+#body {
     font-family: 'Segoe UI';
+    background-color: var(--bg-color);
+    color: var(--font-color);
 }
+
+
+:root {
+  --primary-color: #635BA0;
+  --secondary-color: #807e8b;
+  --font-color: black;
+  --bg-color: #F2F2F2;
+  --heading-color: #221E41;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #E0E0E0;
+  --font-color: white;
+  --bg-color: #221E41;
+  --heading-color: white;
+}
+
 
 html, body {
     margin: 0;
     overflow-x: hidden;
-  }
+}
 
-  h1 {
-      font-size: 60px;
-      font-weight: 700;
-      color: #221E41;
-      line-height: 106px;
-  }
-
-  h2 {
-    font-size: 40px;
+h1 {
+    font-size: 60px;
     font-weight: 700;
-    color: #221E41;
-  }
+    color: var(--heading-color);
+    line-height: 106px;
+}
 
-  h3 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #635BA0;
-  }
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--font-color);
+}
 
-  h4 {
-    font-size: 18px;
-    font-weight: 700;
-    color: black;
-  }
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
 
-  p {
-    font-size: 14px;
-    font-weight: normal;
-    color: #757384;
-  }
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--font-color);
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--secondary-color);
+}
+
+a{
+  color: var(--font-color);
+}
+
+svg path{
+  fill: var(--font-color);;
+}
 

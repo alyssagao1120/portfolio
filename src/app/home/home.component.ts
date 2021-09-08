@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
 
     const writer = new Typewriter(target, {
       loop: true,
-      typeColor: 'black',
+      // typeColor: 'black',\
       cursorColor: '#C8ABC9',
       deleteSpeed: 20,
       typeSpeed: 125,

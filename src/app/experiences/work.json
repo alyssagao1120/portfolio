@@ -1,0 +1,30 @@
+[
+    {
+        "jobTitle": "Software Developer @ RBC 🏦",
+        "description": ["Wealth Management Digital Client Experience (myGPS)"],
+        "technologies": "Angular, JavaScript, Java, Spring Framework",
+        "date": "Fall 2021",
+        "location": "Toronto, Ontario"
+    },
+    {
+        "jobTitle": "Data Engineer @ Ritual 🍔",
+        "description": [
+            "Implemented scheduled jobs to clean, filter, dedupe, match and load over 2 million resturants’ data into Salesforce",
+            "Constructed a pipeline to pipe 50k+ daily marketing events into Amplitude for marketing/growth team to use for further analysis"
+        ],
+        "technologies": "Python, Java, BigQuery, Apache Beam/Airflow, Kubernetes, DBT, GCP",
+        "date": "Winter 2021",
+        "location": "Toronto, Ontario"
+    },
+    {
+        "jobTitle": "Financial Director @ L.I.G.H.T. 💡",
+        "description": [
+            "Oversaw all finances including budgets, reimbursements and grants",
+            "Outreached to foundations including the Ontario Trillium Foundation (OTF) to negotiate funding"
+        ],
+        "technologies": null,
+        "date": "2018/2019",
+        "location": "Richmond Hill, Ontario"
+    }
+
+]
