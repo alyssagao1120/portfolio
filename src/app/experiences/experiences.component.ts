@@ -15,6 +15,7 @@ export class ExperiencesComponent implements OnInit {
   projects: IProject[] = []
   errorMessage: string = 'Error in retrieving items';
   sub!: Subscription;
+  imgSrc='assets/plants_off.png'
 
   constructor(private experienceService: ExperienceService) { }
 
