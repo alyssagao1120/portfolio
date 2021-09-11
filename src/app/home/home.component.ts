@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   @ViewChild('tw') typewriterElement;
   greetings: string[] = ['Hello', 'Hey', '你好', 'Hi', 'Bonjour', 'Howdy']
   currMonth: Number = -1;
-  lightsURL:string = 'assets/fairy_lights.png';
+  lightsURL:string = 'assets/fairy_lights.gif';
   greeting:string = '';
   nowPlaying = undefined;
   imgSrc = 'assets/no_lights.png'
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     var d = new Date();
     this.currMonth = d.getMonth() + 1;
     if (this.currMonth === 12){
-      this.lightsURL = 'assets/christmas_lights.png'
+      this.lightsURL = 'assets/christmas_lights.gif'
     }
 
     this.getNowPlaying();
