@@ -22,3 +22,22 @@ a{
 img .profile {
     width: 45vw;
 }
+
+@media screen and (max-width: 1000px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-header {
+        line-height: 40px;
+    }
+
+    .about-bio {
+        padding-right:0;
+    }
+
+    .profile{
+        width: 40vw;
+        margin-top: 1rem;
+    }
+  }

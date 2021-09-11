@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   @ViewChild('tw') typewriterElement;
   greetings: string[] = ['Hello', 'Hey', '你好', 'Hi', 'Bonjour', 'Howdy']
   currMonth: Number = -1;
-  lightsURL:string = 'assets/fairy_lights.gif';
+  lightsURL:string = 'assets/fairy_lights.png';
   greeting:string = '';
   nowPlaying = undefined;
   imgSrc = 'assets/no_lights.png'

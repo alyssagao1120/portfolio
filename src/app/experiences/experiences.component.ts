@@ -33,9 +33,6 @@ export class ExperiencesComponent implements OnInit {
       },
       error: err => this.errorMessage = err
     })
-
-    console.log(this.projects)
-    console.log(this.work)
   }
 
   ngOnDestroy(): void {

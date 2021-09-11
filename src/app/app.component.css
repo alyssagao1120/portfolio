@@ -68,7 +68,7 @@ a:focus::after {
 
 @media screen and (max-width: 768px) {
     .app {
-        padding: 1rem 10vw;
+        padding: 2rem 10vw;
     }
     nav {
         justify-content: space-between;
@@ -77,6 +77,6 @@ a:focus::after {
       flex-direction: column;
     }
     li {
-        padding: 0.5rem 0
+        padding: 0.3rem 0
     }
   }

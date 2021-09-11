@@ -18,15 +18,15 @@ export class ExperienceService {
 
     getWork(): Observable<IWork[]> {
         return this.http.get<IWork[]>(this.workUrl).pipe(
-            tap(data => console.log(JSON.stringify(data))),
-            catchError(this.handleError)
+            // tap(data => console.log(JSON.stringify(data))),
+            // catchError(this.handleError)
         )
     }
 
     getProjects(): Observable<IProject[]> {
       return this.http.get<IProject[]>(this.projectsUrl).pipe(
-          tap(data => console.log(JSON.stringify(data))),
-          catchError(this.handleError)
+          // tap(data => console.log(JSON.stringify(data))),
+          // catchError(this.handleError)
       )
    }
 

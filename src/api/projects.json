@@ -18,7 +18,6 @@
         "name": "Recipe Hunt 🍰",
         "description": "Web application designed for people to discover new recipes based on already owned ingredients",
         "technologies": "Java, Spring MVC, REST API, MySQL, Angular, Typescript, HTML/CSS, Maven, Tomcat",
-        "award": null,
         "github": "https://github.com/alyssagao1120/recipe-hunt"
     },
     {
