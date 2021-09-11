@@ -83,10 +83,10 @@ a:focus::after {
     }
 
     li {
-        padding: 0.05rem 0
+        padding: 0.1rem 0
     }
     a:focus::after {
         opacity: 1;
-        transform: translate3d(0, 0.2em, 0);
+        transform: translate3d(0, 0.1em, 0);
     }
   }

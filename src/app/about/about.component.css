@@ -29,8 +29,8 @@ a{
     }
 
     h2 {
-        font-size: 30px;
-        line-height: 32px;
+        font-size: 25px;
+        line-height: 25px;
     }
 
     p, li{
@@ -49,5 +49,9 @@ a{
     .profile{
         width: 40vw;
         margin-top: 1rem;
+    }
+
+    .cat-paw{
+        width: 70px;
     }
   }
