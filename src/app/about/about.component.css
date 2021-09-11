@@ -41,11 +41,7 @@ a{
     .about-bio {
         padding-right:0;
     }
-
-    a{
-        text-decoration: underline;
-    }
-
+    
     .profile{
         width: 40vw;
         margin-top: 1rem;

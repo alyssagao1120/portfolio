@@ -34,7 +34,7 @@ ul {
 
 .company, .projct-name {
     /* display: inline-block; */
-    /* color: black; */
+    color: black;
     text-decoration: none;
 
     /* "to left" / "to right" - affects initial color */
@@ -81,6 +81,11 @@ a:hover{
     .plant {
         display: none;
     }
+    a{
+        text-decoration: underline;
+        color: #221E41
+    }
+
 }
 
 @media screen and (max-width: 800px) {
