@@ -19,21 +19,31 @@ a{
     font-weight:700;
 }
 
-img .profile {
-    width: 45vw;
+.profile{
+    width: 30vw;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .about-container {
         flex-direction: column;
     }
 
-    .about-header {
-        line-height: 40px;
+    h2 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    p, li{
+        font-size: 11px;
+        line-height: 15px;
     }
 
     .about-bio {
         padding-right:0;
+    }
+
+    a{
+        text-decoration: underline;
     }
 
     .profile{

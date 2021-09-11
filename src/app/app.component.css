@@ -68,15 +68,25 @@ a:focus::after {
 
 @media screen and (max-width: 768px) {
     .app {
-        padding: 2rem 10vw;
+        padding: 2rem 5vw;
     }
     nav {
         justify-content: space-between;
     }
     ul {
-      flex-direction: column;
+        flex-direction: column;
+        text-align: right;
     }
+    .nav-link{
+        font-size: 15px;
+        line-height: 15px;
+    }
+
     li {
-        padding: 0.3rem 0
+        padding: 0.05rem 0
+    }
+    a:focus::after {
+        opacity: 1;
+        transform: translate3d(0, 0.2em, 0);
     }
   }

@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     writer
     .strings(
       1500,
-      "a programmer. 👩🏻‍💻", 
+      "a programmer. 💻", 
       "a foodie at heart. 🍜", 
       "a heavy emoji user. 🙈🌱✨",
       "an Angular over React user (controversial, I'm sorry 😖)", 
