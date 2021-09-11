@@ -16,3 +16,18 @@
  .image_on, #home:hover .image_off{
     display:block
  }
+
+ @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 8vw;
+        line-height: 12vw;
+        margin-top: 5rem;
+    }
+    .home-subheading {
+        font-size: 4vw;
+        line-height: 12vw;
+    }
+    img {
+        width: 80vw;
+    }
+  }

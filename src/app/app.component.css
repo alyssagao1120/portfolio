@@ -67,6 +67,9 @@ a:focus::after {
 }
 
 @media screen and (max-width: 768px) {
+    .app {
+        padding: 1rem 10vw;
+    }
     nav {
         justify-content: space-between;
     }
