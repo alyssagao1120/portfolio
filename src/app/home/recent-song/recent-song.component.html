@@ -1,14 +1,16 @@
-<div class='main-container'>
+<div *ngIf='recentSong' class='main-container'>
     <p>I'm currently jamming to...</p>
     <div class='song-container'>
         <div class='song-info'>
             <h2>{{recentSong.title}}</h2>
             <h5>{{recentSong.artist}}</h5>
         </div>
-        <a [href]='recentSong.songLink' target="_blank">
-            <div id='rotating' [ngStyle]="{'background-image': 'url(' + recentSong.imageSrc + ')'}" class="cd">
-                <div class="hole"></div>
-            </div>        
-        </a>
+        <div class='cd-player'>
+            <a [href]='recentSong.songLink' target="_blank">
+                <div id='rotating' [ngStyle]="{'background-image': 'url(' + recentSong.imageSrc + ')'}" class="cd">
+                    <div class="hole"></div>
+                </div>        
+            </a>
+        </div>
     </div>
 </div>
