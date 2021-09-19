@@ -18,9 +18,9 @@ li {
   }
   
 @keyframes glow{
-to {
-    box-shadow: 0px 0px 10px 10px #5adddd;
-}
+    to {
+        box-shadow: 0px 0px 10px 10px #5adddd;
+    }
 }
 
 nav {

@@ -10,7 +10,7 @@ import Typewriter from 't-writer.js';
 export class HomeComponent implements OnInit, AfterViewInit  {
 
   @ViewChild('tw') typewriterElement;
-  greetings: string[] = ['Hello', 'Hey', '你好', 'Hi', 'Bonjour', 'Howdy']
+  greetings: string[] = ['Hello', 'Hey', '你好', 'Hi', 'Bonjour']
   currMonth: Number = -1;
   lightsURL:string = 'assets/fairy_lights.png';
   greeting:string = '';
@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
       "a programmer. 💻", 
       "a foodie at heart. 🍜", 
       "a heavy emoji user. 🙈🌱✨",
-      "an Angular over React user (controversial, I'm sorry 😖)", 
+      "an Angular over React user (controversial, oops 😖)", 
       "a pineapple on pizza advocate 🍍",
       "an avid movie binge-watcher. 🎬🍿",
       "a mediocre valorant gamer. 🎮", 

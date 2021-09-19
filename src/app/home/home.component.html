@@ -4,9 +4,6 @@
     <img [src]="imgSrc" title="Inspired by Lofi Girl"
            (mouseover)="imgSrc = lightsURL"
            (mouseout)="imgSrc = 'assets/no_lights.png'">
-
-    <!-- <div *ngIf='nowPlaying'>
-        Now Playing: {{ nowPlaying.name }}
-    </div> -->
+    <app-recent-song></app-recent-song>
 </div>
 <app-contact></app-contact>
