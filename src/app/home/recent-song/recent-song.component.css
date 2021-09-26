@@ -9,10 +9,10 @@
 .song-container {
     display: flex;
     flex-direction:row;
-    background-color: #221E41;
+    background-color: #635BA0;
     /* border: 2px solid #000000; */
     box-sizing: border-box;
-    border-radius: 30px;
+    border-radius: 10px;
     align-items: center;
     text-align: center;
     justify-content: space-between;
@@ -68,7 +68,7 @@ h5 {
     width: 20px;
     height: 20px;
     position: absolute;
-    background-color: #221E41;
+    background-color: #635BA0;
     left: 30px;
     top: 30px;
     -moz-border-radius: 24px;
@@ -126,6 +126,10 @@ h5 {
         height: 20px;
         left: 20px;
         top: 20px;
+    }
+    p{
+        font-size: 4vw;
+        line-height: 6vw;
     }
 }
   
