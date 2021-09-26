@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ContactComponent } from './contact/contact.component';
 import { RecentSongComponent } from './home/recent-song/recent-song.component';
+import { DarkModeToggleComponent } from './home/dark-mode-toggle/dark-mode-toggle.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RecentSongComponent } from './home/recent-song/recent-song.component';
     AboutComponent,
     ExperiencesComponent,
     ContactComponent,
-    RecentSongComponent
+    RecentSongComponent,
+    DarkModeToggleComponent
   ],
   imports: [
     BrowserModule,

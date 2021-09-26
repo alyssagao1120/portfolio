@@ -4,15 +4,15 @@
 
 #body {
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--font-color);
+    /* background-color: var(--bg-color);
+    color: var(--font-color); */
 }
 
 
 :root {
   --primary-color: #635BA0;
   --secondary-color: #484857;
-  --font-color: black;
+  --font-color: #000;
   --bg-color: #F2F2F2;
   --heading-color: #221E41;
 }
@@ -20,9 +20,9 @@
 [data-theme="dark"] {
   --primary-color: #9A97F3;
   --secondary-color: #E0E0E0;
-  --font-color: white;
+  --font-color: #fff;
   --bg-color: #221E41;
-  --heading-color: white;
+  --heading-color: #fff;
 }
 
 
@@ -31,40 +31,102 @@ html, body {
     overflow-x: hidden;
 }
 
+body:not(.dark-mode-preloading) {
+  transition: all 0.3s linear;
+}
+
+body.dark-mode {
+  background-color: #221E41;
+  color: #fff;
+}
+
+body.light-mode {
+  background-color: #F2F2F2;
+  color: #000;
+}
+
+h1.dark-mode {
+  color: #fff;
+}
+
+h1.light-mode {
+  color: #221E41;
+}
+
+h2.dark-mode {
+  color: #fff;
+}
+
+h2.light-mode {
+  color: #000;
+}
+
+h3.dark-mode {
+  color: #9A97F3;
+}
+
+h3.light-mode {
+  color: #635BA0;
+}
+
+h4.dark-mode {
+  color: #fff;
+}
+
+h4.light-mode {
+  color: #000;
+}
+
+p.dark-mode {
+  color: #E0E0E0;
+}
+
+p.light-mode {
+  color: #484857;
+}
+
+a.dark-mode {
+  color: #000;
+}
+
+a.light-mode {
+  color: #fff;
+}
+
 h1 {
     font-size: 60px;
     font-weight: 700;
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
     line-height: 106px;
 }
 
 h2 {
   font-size: 40px;
   font-weight: 700;
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 h3 {
   font-size: 22px;
   font-weight: 700;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 h4 {
   font-size: 18px;
   font-weight: 700;
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 p {
   font-size: 14px;
   font-weight: normal;
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
 }
 
-a{
+/* a{
   color: var(--font-color);
-}
+} */
 
 svg path{
   fill: var(--font-color);;

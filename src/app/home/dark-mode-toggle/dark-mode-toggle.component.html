@@ -1,0 +1,6 @@
+<img 
+    [src]="imgSrc" title="Click me!"
+    (mouseover)="imgSrc = lightsURL"
+    (mouseout)="imgSrc = 'assets/no_lights.png'"
+    (click)="onToggle()"
+>

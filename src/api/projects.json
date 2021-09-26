@@ -1,6 +1,6 @@
 [
     {
-        "name": "Chess 🎮",
+        "name": "Chess ♟️",
         "description": "Inspired by Chess Tempo, an interactive database of chess games that lets user enter any sequence of valid chess moves and view statistics about chess games that have been previously played starting from the same opening sequence of moves that the user has entered",
         "technologies": "Java, Python, React, Spring Boot, MySQL, Shell, Maven, HTML/CSS",
         "award": "CS 348 - Top 4 Excellent Project Award",

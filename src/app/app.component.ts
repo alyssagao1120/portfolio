@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DarkModeService } from 'angular-dark-mode';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,13 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'portfolio';
+  darkMode: boolean = false;
+  darkMode$: Observable<boolean> = this.darkModeService.darkMode$;
+  
+
+  constructor(private darkModeService: DarkModeService) { }
+
+  ngOnInit(): void {
+    this.darkMode$.subscribe(data => this.darkMode = data);
+  }
 }

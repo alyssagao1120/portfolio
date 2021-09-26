@@ -1,23 +1,37 @@
 <div class='contact-container'>
     <p>made with 🚀 + ✨</p>
-    <div class='social-media'>
+    <div [hidden]="darkMode" class='social-media'>
         <a href="https://www.linkedin.com/in/alyssa-gao/">
-            <!-- <svg> -->
-
-                <img  class="social-media-icon linkedin" src="assets/linkedin.svg"/>
-            <!-- </svg> -->
+            <img  class="social-media-icon linkedin" width=30 src="assets/linkedin_light.svg"/>
         </a>
         <a href="https://github.com/alyssagao1120">
-            <img class="social-media-icon github" src="assets/github.svg">
+            <img class="social-media-icon github" width=30 src="assets/github_light.svg">
         </a>
         <a href="https://www.facebook.com/itsalyssagao/">
-            <img class="social-media-icon facebook" src="assets/facebook.svg">
+            <img class="social-media-icon facebook" width=30 src="assets/facebook_light.svg">
         </a>
         <a href="https://www.instagram.com/alyssa.gao/">
-            <img class="social-media-icon instagram" src="assets/instagram.svg">
+            <img class="social-media-icon instagram" width=30 src="assets/instagram_light.svg">
         </a>
         <a href="https://sptfy.com/6q8p">
-            <img class="social-media-icon spotify" src="assets/spotify.svg">
+            <img class="social-media-icon spotify" width=30 src="assets/spotify_light.svg">
+        </a>
+    </div>
+    <div [hidden]="!darkMode" class='social-media'>
+        <a href="https://www.linkedin.com/in/alyssa-gao/">
+            <img  class="social-media-icon linkedin" width=30 src="assets/linkedin_dark.svg"/>
+        </a>
+        <a href="https://github.com/alyssagao1120">
+            <img class="social-media-icon github" width=30 src="assets/github_dark.svg">
+        </a>
+        <a href="https://www.facebook.com/itsalyssagao/">
+            <img class="social-media-icon facebook" width=30 src="assets/facebook_dark.svg">
+        </a>
+        <a href="https://www.instagram.com/alyssa.gao/">
+            <img class="social-media-icon instagram" width=30 src="assets/instagram_dark.svg">
+        </a>
+        <a href="https://sptfy.com/6q8p">
+            <img class="social-media-icon spotify" width=30 src="assets/spotify_dark.svg">
         </a>
     </div>
 </div>

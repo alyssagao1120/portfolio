@@ -1,8 +1,9 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
-import { Subscription } from "rxjs";
+import { Observable, Subscription } from "rxjs";
 import { IWork } from "./work";
 import { IProject } from "./project";
 import { ExperienceService } from './experience.service'
+import { DarkModeService } from "angular-dark-mode";
 
 @Component({
   selector: 'app-experiences',
@@ -16,10 +17,13 @@ export class ExperiencesComponent implements OnInit {
   errorMessage: string = 'Error in retrieving items';
   sub!: Subscription;
   imgSrc='assets/plants_off.png'
+  darkMode: boolean = false;
+  darkMode$: Observable<boolean> = this.darkModeService.darkMode$;
 
-  constructor(private experienceService: ExperienceService) { }
+  constructor(private experienceService: ExperienceService, private darkModeService: DarkModeService) { }
 
   ngOnInit(): void {
+    this.darkMode$.subscribe(data => this.darkMode = data);
     this.sub = this.experienceService.getWork().subscribe({
       next: work => {
           this.work = work;

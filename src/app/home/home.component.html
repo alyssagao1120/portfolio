@@ -1,9 +1,10 @@
 <div class='home-container'>
     <h1>{{greeting}}, I‘m Alyssa.</h1>
-    <h2 class="home-subheading">I'm <span class="tw" #tw></span></h2>
-    <img [src]="imgSrc" title="Inspired by Lofi Girl"
-           (mouseover)="imgSrc = lightsURL"
-           (mouseout)="imgSrc = 'assets/no_lights.png'">
+    <h2 class="home-subheading">I'm 
+        <span [hidden]="!darkMode" class="tw" #tw></span>
+        <span [hidden]="darkMode" class="twdark" id="twdark"></span>
+    </h2>
+    <app-dark-mode-toggle (onDarkModeChosen)="setDarkMode($event)"></app-dark-mode-toggle>
     <app-recent-song></app-recent-song>
 </div>
 <app-contact></app-contact>

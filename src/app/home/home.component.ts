@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, ViewChild  } from '@angular/core';
+import { DarkModeService } from 'angular-dark-mode';
+import { Observable } from 'rxjs';
 import Typewriter from 't-writer.js';
-// import SpotifyWebApi from 'spotify-web-api-js';
 
 @Component({
   selector: 'app-home',
@@ -11,40 +12,37 @@ export class HomeComponent implements OnInit, AfterViewInit  {
 
   @ViewChild('tw') typewriterElement;
   greetings: string[] = ['Hello', 'Hey', '你好', 'Hi', 'Bonjour']
-  currMonth: Number = -1;
-  lightsURL:string = 'assets/fairy_lights.png';
   greeting:string = '';
   nowPlaying = undefined;
-  imgSrc = 'assets/no_lights.png'
+  darkMode: boolean = false;
+  darkMode$: Observable<boolean> = this.darkModeService.darkMode$;
   
 
-  constructor() { }
+  constructor(private darkModeService: DarkModeService) { }
 
   ngOnInit(): void {
+    this.darkMode$.subscribe(data => this.darkMode = data);
     this.greeting = this.greetings[Math.floor(Math.random() * this.greetings.length)];
-    var d = new Date();
-    this.currMonth = d.getMonth() + 1;
-    if (this.currMonth === 12){
-      this.lightsURL = 'assets/christmas_lights.gif'
-    }
-
-    this.getNowPlaying();
   }
 
   ngAfterViewInit() {
-    const target = this.typewriterElement.nativeElement
+    const targetLight = this.typewriterElement.nativeElement;
+    const targetDark = document.getElementById('twdark');
 
-    const writer = new Typewriter(target, {
+    console.log(targetLight)
+    console.log(targetDark)
+
+    const writerLight = new Typewriter(targetLight, {
       loop: true,
-      // typeColor: 'black',\
       cursorColor: '#C8ABC9',
+      typeColor: 'white',
       deleteSpeed: 20,
-      typeSpeed: 125,
+      typeSpeed: 100,
       blinkSpeed: 200,
       animateCursor: true,
     })
 
-    writer
+    writerLight
     .strings(
       1500,
       "a programmer. 💻", 
@@ -56,17 +54,34 @@ export class HomeComponent implements OnInit, AfterViewInit  {
       "a mediocre valorant gamer. 🎮", 
       "a night owl. 🌙", 
       "a Disney fanatic. 🏰"
-    )
-    .start()
+    ).start()
+
+    const writerDark = new Typewriter(targetDark, {
+      loop: true,
+      cursorColor: '#C8ABC9',
+      deleteSpeed: 20,
+      typeSpeed: 100,
+      blinkSpeed: 200,
+      animateCursor: true,
+    })
+
+    writerDark
+    .strings(
+      1500,
+      "a programmer. 💻", 
+      "a foodie at heart. 🍜", 
+      "a heavy emoji user. 🙈🌱✨",
+      "an Angular over React user (controversial, oops 😖)", 
+      "a pineapple on pizza advocate 🍍",
+      "an avid movie binge-watcher. 🎬🍿",
+      "a mediocre valorant gamer. 🎮", 
+      "a night owl. 🌙", 
+      "a Disney fanatic. 🏰"
+    ).start()
   }
 
-  getNowPlaying(){
-    // this.spotifyApi.getMyCurrentPlaybackState()
-    //   .then((response) => {
-    //     this.nowPlaying = { 
-    //       name: response.item.name, 
-    //       albumArt: response.item.album.images[0].url
-    //     }
-    // });
+  public setDarkMode(darkModeOn: boolean):void {
+    this.darkMode = darkModeOn;
+    console.log(this.darkMode)
   }
 }

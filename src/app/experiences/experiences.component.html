@@ -8,7 +8,7 @@
             <div class='work'>
                 <h3>WORK</h3>
                 <div *ngFor="let workexp of work">
-                    <h4>{{workexp.jobTitle}} @ <a class='company' href={{workexp.url}}>{{workexp.company}}</a></h4>
+                    <h4>{{workexp.jobTitle}} @ <a [style.color]="!darkMode ? 'black' : 'white'" class='company' href={{workexp.url}}>{{workexp.company}}</a></h4>
                     <ul>
                         <li *ngFor="let descrip of workexp.description">
                             <p>{{descrip}}</p>
@@ -25,12 +25,12 @@
             <div class='side-projects'>
                 <h3>SIDE PROJECTS</h3>
                 <div *ngFor="let project of projects">
-                    <h4><a class='projct-name' href={{project.github}}>{{project.name}}</a></h4>
+                    <h4><a class='projct-name' [style.color]="!darkMode ? 'black' : 'white'" href={{project.github}}>{{project.name}}</a></h4>
                     <p class='project-description'>{{project.description}}</p>
                     <p><span style='font-weight:700'>Technologies</span>: {{project.technologies}}</p>
                     <p>
                         <span *ngIf='project.award && project.awardUrl'>
-                            <a class='awardUrl' href={{project.awardUrl}}>{{project.award}}</a>
+                            <a class='awardUrl' [style.color]="!darkMode ? 'black' : 'white'" href={{project.awardUrl}}>{{project.award}}</a>
                         </span>
                     </p>
                     <p>
