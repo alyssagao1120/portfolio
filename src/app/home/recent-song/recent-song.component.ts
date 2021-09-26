@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./recent-song.component.css']
 })
 export class RecentSongComponent implements OnInit {
-  recentSong: ISong;
+  recentSong!: ISong;
   private url = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=alyssagao&api_key=41f4e0cbba0067a42455c24badfe015c&format=json&limit=1'
 
   constructor(private http: HttpClient) { }

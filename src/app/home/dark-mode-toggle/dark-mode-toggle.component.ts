@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class DarkModeToggleComponent implements OnInit{
 
   darkMode$: Observable<boolean> = this.darkModeService.darkMode$;
-  darkModeOn: boolean
+  darkModeOn: boolean = false;
   @Output() onDarkModeChosen = new EventEmitter<any>();
   lightsURL:string = 'assets/fairy_lights.png';
   imgSrc = 'assets/no_lights.png';
