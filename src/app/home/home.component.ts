@@ -48,10 +48,10 @@ export class HomeComponent implements OnInit, AfterViewInit  {
       "a programmer. 💻", 
       "a foodie at heart. 🍜", 
       "a heavy emoji user. 🙈🌱✨",
-      "an Angular over React user (controversial, oops 😖)", 
       "a pineapple on pizza advocate 🍍",
       "an avid movie binge-watcher. 🎬🍿",
-      "a mediocre valorant gamer. 🎮", 
+      "a mediocre valorant gamer. 🎮",
+      "a musical enthusiast. 🎭",
       "a night owl. 🌙", 
       "a Disney fanatic. 🏰"
     ).start()
@@ -71,10 +71,10 @@ export class HomeComponent implements OnInit, AfterViewInit  {
       "a programmer. 💻", 
       "a foodie at heart. 🍜", 
       "a heavy emoji user. 🙈🌱✨",
-      "an Angular over React user (controversial, oops 😖)", 
       "a pineapple on pizza advocate 🍍",
       "an avid movie binge-watcher. 🎬🍿",
-      "a mediocre valorant gamer. 🎮", 
+      "a mediocre valorant gamer. 🎮",
+      "a musical enthusiast. 🎭",
       "a night owl. 🌙", 
       "a Disney fanatic. 🏰"
     ).start()

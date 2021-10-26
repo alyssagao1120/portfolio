@@ -1,8 +1,11 @@
 <div class='app'>
   <nav>
     <div class='navbar-logo'>
-      <a routerLink='/home'>
+      <a [hidden]="darkMode" routerLink='/home'>
         <img src ="assets/light-logo.svg">
+      </a>
+      <a [hidden]="!darkMode" routerLink='/home'>
+        <img src ="assets/dark-logo.svg">
       </a>
     </div>
     <ul class='navbar-links'>
