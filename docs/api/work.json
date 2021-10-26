@@ -3,7 +3,7 @@
         "jobTitle": "Software Developer",
         "company": "RBC 🏦",
         "description": ["Digital Client Experience (myGPS, myDiscovery, WealthBoard)"],
-        "technologies": "Angular, TypeScript, Node.js, MongoDB, GraphQL",
+        "technologies": "Angular, NgRx, TypeScript, MongoDB, GraphQL, Node.js",
         "date": "Fall 2021",
         "location": "Toronto, Ontario",
         "url": "https://ca.rbcwealthmanagement.com/"
