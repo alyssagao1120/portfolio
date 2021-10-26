@@ -30,6 +30,5 @@ export class DarkModeToggleComponent implements OnInit{
     this.darkModeService.toggle();
     this.darkMode$.subscribe(data => this.darkModeOn = data);
     this.onDarkModeChosen.emit(this.darkModeOn);
-    // console.log(this.darkModeOn);
   }
 }

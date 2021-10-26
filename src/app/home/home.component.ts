@@ -29,9 +29,6 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     const targetLight = this.typewriterElement.nativeElement;
     const targetDark = document.getElementById('twdark');
 
-    console.log(targetLight)
-    console.log(targetDark)
-
     const writerLight = new Typewriter(targetLight, {
       loop: true,
       cursorColor: '#C8ABC9',
@@ -48,7 +45,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
       "a programmer. 💻", 
       "a foodie at heart. 🍜", 
       "a heavy emoji user. 🙈🌱✨",
-      "a pineapple on pizza advocate 🍍",
+      "a pineapple on pizza advocate. 🍍",
       "an avid movie binge-watcher. 🎬🍿",
       "a mediocre valorant gamer. 🎮",
       "a musical enthusiast. 🎭",
@@ -71,7 +68,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
       "a programmer. 💻", 
       "a foodie at heart. 🍜", 
       "a heavy emoji user. 🙈🌱✨",
-      "a pineapple on pizza advocate 🍍",
+      "a pineapple on pizza advocate. 🍍",
       "an avid movie binge-watcher. 🎬🍿",
       "a mediocre valorant gamer. 🎮",
       "a musical enthusiast. 🎭",
@@ -82,6 +79,5 @@ export class HomeComponent implements OnInit, AfterViewInit  {
 
   public setDarkMode(darkModeOn: boolean):void {
     this.darkMode = darkModeOn;
-    console.log(this.darkMode)
   }
 }
