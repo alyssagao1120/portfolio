@@ -1,15 +1,29 @@
 [
     {
-        "jobTitle": "Software Developer",
+        "jobTitle": "Incoming Software Engineer Intern",
+        "company": "Tesla 🚘",
+        "description": [
+            
+        ],
+        "technologies": "",
+        "date": "Summer 2022",
+        "location": "Fremont, California",
+        "url": "https://www.tesla.com/"
+    },
+    {
+        "jobTitle": "Front-End Developer Intern",
         "company": "RBC 🏦",
-        "description": ["Digital Client Experience (myGPS, myDiscovery, WealthBoard)"],
-        "technologies": "Angular, NgRx, TypeScript, MongoDB, GraphQL, Node.js",
+        "description": [
+            "Developed Angular components for financial questionnaire/projection-type web applications used by national RBC clients (myGPS, myDiscovery, WealthBoard)",
+            "Implemented state management within application and integrated Google Analytics to capture user interaction events"
+        ],
+        "technologies": "Angular, NgRx, TypeScript, MongoDB, GraphQL, SASS",
         "date": "Fall 2021",
         "location": "Toronto, Ontario",
         "url": "https://ca.rbcwealthmanagement.com/"
     },
     {
-        "jobTitle": "Data Engineer",
+        "jobTitle": "Data Engineer Intern",
         "company": "Ritual 🍔",
         "description": [
             "Implemented scheduled jobs to clean, filter, dedupe, match and load over 2 million restaurants’ data into Salesforce",

@@ -21,7 +21,7 @@
         "github": "https://github.com/alyssagao1120/recipe-hunt"
     },
     {
-        "name": "SafeLane 🚘",
+        "name": "SafeLane 🗺",
         "description": "Web interface intended to map out the safest and most efficient routes for beginner drivers or drivers with children in the car using an algorithm that avoids routes with high collision frequency intersections and streets",
         "technologies": "Java,  JavaScript, MySQL, HTML/CSS, Google Map API, Google Cloud",
         "award": "Hack The Valley 4 - Best Mapping and Travel Hack",
